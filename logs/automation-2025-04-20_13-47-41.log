@@ -1,4 +1,0 @@
-2025-04-20 13:47:46 INFO  TC_001_LoginVerify:18 - **[start]Starting the TestCase TC_001_LoginVerify ***
-2025-04-20 13:47:46 INFO  TC_001_LoginVerify:20 - ** [info]Intializing the LoginPage ***
-2025-04-20 13:48:09 INFO  TC_001_LoginVerify:27 - **[Info]Succesfully Entered credintials and clicked on login button***
-2025-04-20 13:48:09 ERROR TC_001_LoginVerify:43 - **[FAIL]  Unable to Login***

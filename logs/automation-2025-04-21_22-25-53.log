@@ -1,4 +1,0 @@
-2025-04-21 22:25:58 INFO  TC_001_LoginVerify:18 - **[start]Starting the TestCase TC_001_LoginVerify ***
-2025-04-21 22:25:58 INFO  TC_001_LoginVerify:20 - ** [info]Intializing the LoginPage ***
-2025-04-21 22:26:44 INFO  TC_001_LoginVerify:27 - **[Info]Succesfully Entered credintials and clicked on login button***
-2025-04-21 22:26:48 INFO  TC_001_LoginVerify:35 - **[INFO]Searching for Welcome message***

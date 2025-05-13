@@ -63,7 +63,7 @@ public class BaseClass
 	        	{
 	        		dc.setPlatform(Platform.WIN11);
 	        	}
-	        	else if(os.equalsIgnoreCase("linun"))
+	        	else if(os.equalsIgnoreCase("linux"))
 	        	{
 	        		dc.setPlatform(Platform.LINUX);
 	        	}
@@ -84,7 +84,7 @@ public class BaseClass
 	        	case "edge" : dc.setBrowserName("MicrosoftEdge"); break;
 	        	default : System.out.println("Incorrect or not available Browser");
 	        	}
-	        	driv= new RemoteWebDriver(new URL("http://192.168.147.229:4444"),dc);
+	        	driv= new RemoteWebDriver(new URL("http://192.168.0.113:4444"),dc);
 	        }
 
 	        if(p.getProperty("Execution_Environment").equalsIgnoreCase("local"))

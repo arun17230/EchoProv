@@ -8,14 +8,36 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">ExtentSuite</th></tr>
-<tr><td><a href="#t0">Functional</a></td><td class="num">4</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">186,516</td><td>regression</td><td></td></tr>
+<tr><th colspan="8">DockerSuit</th></tr>
+<tr><td><a href="#t0">LinuxEnv</a></td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">18,690</td><td>sanity</td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">ExtentSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Functional &#8212; passed</th></tr><tr class="passedeven"><td rowspan="4">TestCase.TC_002_Verify_Login</td><td><a href="#m0">verifyLog</a></td><td rowspan="4">1745502700421</td><td rowspan="4">31818</td></tr><tr class="passedeven"><td><a href="#m1">verifyLog</a></td></tr><tr class="passedeven"><td><a href="#m2">verifyLog</a></td></tr><tr class="passedeven"><td><a href="#m3">verifyLog</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">DockerSuit</th></tr></tbody><tbody id="t0"><tr><th colspan="4">LinuxEnv &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">TestCase.TC_001_LoginVerify</td><td><a href="#m0">verify</a></td><td rowspan="1">1746543934598</td><td rowspan="1">10144</td></tr></tbody>
 </table>
-<h2>Functional</h2><h3 id="m0">TestCase.TC_002_Verify_Login#verifyLog</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>faikh.shaik</td><td>ColdStart123***</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">TestCase.TC_002_Verify_Login#verifyLog</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>p.dapide</td><td>Welcome@123456789</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">TestCase.TC_002_Verify_Login#verifyLog</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>amaltumkar</td><td>Calendar@2025***</td><td>Valid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">TestCase.TC_002_Verify_Login#verifyLog</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr><tr class="param stripe"><td>dileep.kumar</td><td>Diesel1234****</td><td>Invalid</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>LinuxEnv</h2><h3 id="m0">TestCase.TC_001_LoginVerify#verify</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;MainContent_LoginUser_UserName&apos;]&quot;}
+  (Session info: chrome=135.0.7049.84)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.20.0&apos;, revision: &apos;866c76ca80&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;23&apos;
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Command: [8aba55c880299d7b421459772709807a, findElement {value=//input[@id=&apos;MainContent_LoginUser_UserName&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 135.0.7049.84, chrome: {chromedriverVersion: 135.0.7049.84 (6c019e560019..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:41943}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:bidiEnabled: false, se:cdp: ws://172.21.0.4:4444/sessio..., se:cdpVersion: 135.0.7049.84, se:containerName: ec65d64b104f, se:noVncPort: 7900, se:vnc: ws://172.21.0.4:4444/sessio..., se:vncEnabled: true, se:vncLocalAddress: ws://172.21.0.4:7900, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8aba55c880299d7b421459772709807a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.TracedCommandExecutor.execute(TracedCommandExecutor.java:51)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy31.clear(Unknown Source)
+	at Page_Object.LoginPage.putUser(LoginPage.java:43)
+	at TestCase.TC_001_LoginVerify.verify(TC_001_LoginVerify.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+... Removed 28 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
