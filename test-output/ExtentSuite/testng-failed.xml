@@ -16,8 +16,8 @@
       <class name="TestCase.TC_002_Verify_Login">
         <methods>
           <include name="dismantle"/>
-          <include name="launchpad"/>
           <include name="verifyLog" invocation-numbers="0 1 2 3"/>
+          <include name="launchpad"/>
         </methods>
       </class> <!-- TestCase.TC_002_Verify_Login -->
     </classes>

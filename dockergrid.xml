@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="DockerSuit">
+
+  <listeners>
+    <listener class-name="Utilities.ExtentReport"/>
+  </listeners>
+
+  <test thread-count="5" name="LinuxEnv">
+    <parameter name="os" value="Linux"/>
+    <parameter name="browser" value="chrome"/>
+
+    <!-- Add config="true" to ensure configuration methods run -->
+    <groups>
+      <run>
+        <include name="sanity"/>
+      </run>
+    </groups>
+
+    <classes>
+      <class name="TestCase.TC_001_LoginVerify"/>
+      <class name="TestCase.TC_002_Verify_Login"/>
+      <!-- Add other test classes as needed -->
+    </classes>
+  </test>
+</suite>
