@@ -1,1 +1,8 @@
-/target/
+logs/
+reports/
+test-output/
+*.log
+*.html
+*.xml
+*.png
+*.gif
