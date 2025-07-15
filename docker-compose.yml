@@ -1,13 +1,7 @@
 version: '3'
 
 services:
-  selenium-hub:
-    image: selenium/hub
-    ports:
-      - "4442-4444:4442-4444"
-    networks:
-      - grid
-
+  
   node-chrome:
     image: selenium/node-chrome
     environment:
@@ -26,6 +20,14 @@ services:
     networks:
       - grid
       
+  selenium-hub:
+	 image: selenium/hub
+	 ports:
+	   - "4442:4442"
+	   - "4443:4443"
+	   - "4444:4444"
+	  networks:
+	  - grid
 
 networks:
   grid:

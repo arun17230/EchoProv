@@ -29,6 +29,9 @@ public class DeepHomePage extends BasePage
 	@FindBy(xpath="//a[@id='btnLogout']")
 	WebElement logoutbtn;
 	
+	@FindBy(xpath = "//a[@id='lnkAddTINs']")
+	WebElement ManageTins;
+	
 
 	public String Welcomemessage()
 	{
@@ -59,6 +62,13 @@ public class DeepHomePage extends BasePage
 		waits.until(ExpectedConditions.visibilityOf(logoutbtn));
 		logoutbtn.click();
 		
+	}
+	
+	
+	public void ClickManageTin()
+	{
+		waits.until(ExpectedConditions.visibilityOf(ManageTins));
+		ManageTins.click();
 	}
 	
 	

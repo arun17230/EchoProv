@@ -6,11 +6,9 @@ import java.util.Scanner;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import TestBase.BasePage;
-import net.bytebuddy.asm.MemberSubstitution.FieldValue;
 
 public class LoginPage extends BasePage
 {
@@ -37,6 +35,8 @@ public class LoginPage extends BasePage
 	@FindBy(xpath="//input[@id='MainContent_btnCodeSubmit']")
 	WebElement submitbtn;
 	
+	@FindBy(xpath="//a[normalize-space()='Click Here']")
+	WebElement forgetlink;
 	
 	public  void putUser(String username)
 	{
@@ -69,13 +69,34 @@ public class LoginPage extends BasePage
 		}
 		catch(Exception e)
 		{
-			System.out.println(e);
+			System.out.println(e.getMessage());
 		}
 	}
+	
+	public boolean isAuthCodeVisible() 
+	{
+        try 
+        {
+            WebDriverWait shortWait = new WebDriverWait(driv, Duration.ofSeconds(5));
+            shortWait.until(ExpectedConditions.visibilityOf(verificationcode));
+            return true;
+        } 
+        catch (Exception e) 
+        {
+            return false;
+        }
+        
+	}
+        
 	
 	public void clickBtn()
 	{
 		loginbtn.click();
+	}
+	
+	public void forgetpassword()
+	{
+		forgetlink.click();
 	}
 	
 	
