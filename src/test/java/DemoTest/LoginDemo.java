@@ -37,12 +37,12 @@ public class LoginDemo
 	@Test
 	public  void putUser(String username)
 	{
-		usern.sendKeys("amaltumkar");
+		usern.sendKeys("");
 	}
 	@Test
 	public void putPass(String password)
 	{
-		passw.sendKeys("Calendar@2025***");
+		passw.sendKeys("");
 	}
 	@Test
 	public void clickBtn()
@@ -56,3 +56,4 @@ public class LoginDemo
 		drivers.close();
 	}
 }
+
