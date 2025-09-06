@@ -29,10 +29,10 @@ public class LoginPage extends BasePage
 	@FindBy(xpath="//input[@id='MainContent_LoginUser_LoginButton']")
 	WebElement loginbtn;
 	
-	@FindBy(xpath="//input[@id='MainContent_txtAuthCode']")
+	@FindBy(xpath="//input[@id='MainContent_txtTOTP']")
 	WebElement verificationcode;
 	
-	@FindBy(xpath="//input[@id='MainContent_btnCodeSubmit']")
+	@FindBy(xpath= "//input[@id='MainContent_btnTOTPSubmit']")
 	WebElement submitbtn;
 	
 	@FindBy(xpath="//a[normalize-space()='Click Here']")

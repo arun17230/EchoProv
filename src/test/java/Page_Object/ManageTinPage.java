@@ -149,7 +149,7 @@ public class ManageTinPage extends BasePage
 	{
 		try 
 		{ 
-			waitForSeconds(5);
+			waitForSeconds(10);
 			waits.until(ExpectedConditions.visibilityOf(TinAddAccessmsg));
 			return TinAddAccessmsg.getText().trim();
 			
@@ -301,5 +301,11 @@ public class ManageTinPage extends BasePage
 	        return "";
 	    }
 	
+	}
+	
+	public void clickRemovetin()
+	{
+		waits.until(ExpectedConditions.elementToBeClickable(removeTin));
+		removeTin.click();
 	}
 }

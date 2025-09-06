@@ -8,7 +8,7 @@
 
   <test thread-count="5" name="LinuxEnv">
     <parameter name="os" value="Linux"/>
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="edge"/>
 
     <!-- Add config="true" to ensure configuration methods run -->
     <groups>

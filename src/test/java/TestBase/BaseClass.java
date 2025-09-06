@@ -10,6 +10,8 @@ import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.NoAlertPresentException;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.TakesScreenshot;
@@ -77,14 +79,14 @@ public class BaseClass
 	        		return;
 	        	}
 	        	//browser
-	        	
+	        		
 	        	switch(browser.toLowerCase())
 	        	{
 	        	case "chrome" : dc.setBrowserName("chrome");break;
 	        	case "edge" : dc.setBrowserName("MicrosoftEdge"); break;
 	        	default : System.out.println("Incorrect or not available Browser");
 	        	}
-	        	driv= new RemoteWebDriver(new URL("http://192.168.0.113:4444"),dc);
+	        	driv= new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),dc);
 	        }
 
 	        if(p.getProperty("Execution_Environment").equalsIgnoreCase("local"))
@@ -156,6 +158,22 @@ public class BaseClass
 		 
 		 return filepath;
 		
+	}
+	
+	public void acceptAlertIfPresent() 
+	{
+	    try
+	    
+	    {
+	        Alert alert = driv.switchTo().alert();
+	        System.out.println("Alert Found: " + alert.getText());
+	        alert.accept(); // or alert.dismiss();
+	        System.out.println("Alert Accepted");
+	    } 
+	    catch (NoAlertPresentException e)
+	    {
+	        System.out.println("No alert present");
+	    }
 	}
 
 		

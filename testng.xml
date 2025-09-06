@@ -5,7 +5,7 @@
   <parameter name ='os' value="Windows"></parameter>
   <parameter name ='browser' value="edge"></parameter>
     <classes>
-      <class name="TestCase.TC_001_LoginVerify"/>
+      <class name="TestBase.BaseClass"/>
     </classes>
   </test> <!-- master -->
 </suite> <!-- Suite -->

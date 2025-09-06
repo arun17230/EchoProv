@@ -11,7 +11,8 @@ import TestBase.BaseClass;
 public class TC_005_AddTin extends BaseClass {
 
     @Test (groups= {"sanity","master"})
-    public void TinAddition() {
+    public void TinAddition() 
+    {
         System.out.println("Started Executing TestCase");
         logs.info("Started TC_005_AddTin");
 
